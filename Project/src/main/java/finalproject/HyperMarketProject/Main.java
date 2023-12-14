@@ -1,8 +1,10 @@
 package finalproject.HyperMarketProject;
 
+import javax.sound.midi.Soundbank;
 import javax.swing.*;
 import java.io.*;
 import java.io.IOException;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -165,17 +167,20 @@ public class Main {
                         {
                             case 1 :
                             {
-                                Admin.add(MarketingEmployees);
+                                System.out.printf("Input employee username and password :");
+                                Admin.add(MarketingEmployees, input.nextLine(), input.nextLine());
                                 break;
                             }
                             case 2:
                             {
-                                Admin.add(InventoryEmployees);
+                                System.out.printf("Input employee username and password :");
+                                Admin.add(InventoryEmployees, input.nextLine(), input.nextLine());
                                 break;
                             }
                             case 3 :
                             {
-                                Admin.add(Sellers);
+                                System.out.printf("Input employee username and password :");
+                                Admin.add(Sellers, input.nextLine(), input.nextLine());
                                 break;
 
                             }
